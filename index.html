@@ -1,0 +1,45 @@
+<!-- LEVEL-1 : TASK 3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="displayScreen" id="display">0</div>
+
+        <div class="buttons">
+            <button class="btn btnNum" data-value="7">7</button>
+            <button class="btn btnNum" data-value="8">8</button>
+            <button class="btn btnNum" data-value="9">9</button>
+            <button class="btn btnOpt" data-value="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M14.5 5.5C14.5 6.88071 13.3807 8 12 8C10.6193 8 9.5 6.88071 9.5 5.5C9.5 4.11929 10.6193 3 12 3C13.3807 3 14.5 4.11929 14.5 5.5Z" stroke="currentColor" stroke-width="1.5" />
+                <path d="M14.5 18.5C14.5 19.8807 13.3807 21 12 21C10.6193 21 9.5 19.8807 9.5 18.5C9.5 17.1193 10.6193 16 12 16C13.3807 16 14.5 17.1193 14.5 18.5Z" stroke="currentColor" stroke-width="1.5" />
+            </svg></button>
+            <button class="btn btnNum" data-value="4">4</button>
+            <button class="btn btnNum" data-value="5">5</button>
+            <button class="btn btnNum" data-value="6">6</button>
+            <button class="btn btnOpt" data-value="*">x</button>
+            <button class="btn btnNum" data-value="1">1</button>
+            <button class="btn btnNum" data-value="2">2</button>
+            <button class="btn btnNum" data-value="3">3</button>
+            <button class="btn btnOpt" data-value="-"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M20 12L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></button>
+            <button class="btn btnNum" data-value="00">00</button>
+            <button class="btn btnNum" data-value="0">0</button>
+            <button class="btn btnOpt" data-value=".">.</button>
+            <button class="btn btnOpt" data-value="+">+</button>
+            <button class="btn btnEqual" data-value="=">=</button>
+            <button class="btn btnAC" data-value="AC">AC</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
