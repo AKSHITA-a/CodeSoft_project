@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
               // Get the value of the button that was clicked
             const value = button.getAttribute('data-value');
-
             // Clear the display and reset input when 'AC' is pressed
             if (value === 'AC') {
                 currentInput = '';
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function(){
                 resultDisplayed = false;
                 return;
             }
-
             // Calculate and display the result when '=' is pressed
             if (value === '=') {
                 try {
@@ -35,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function(){
                 }
                 return;
             }
-
              // Handle input after a result has been displayed
             if (resultDisplayed) {
                 if (/\d/.test(value)) { // If the new value is a number

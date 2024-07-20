@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     display: flex;
     justify-content: center;
@@ -10,7 +9,6 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
 }
-
 .container{
     height: 520px;
     width: 510px;
@@ -22,7 +20,6 @@ body {
     flex-direction: column;
     background-color: #1c1b1b;
 }
-
 .displayScreen {
     border-radius:5px;
     width: 440px;
@@ -33,14 +30,12 @@ body {
     font-size: 4em;
     text-align: right;
 }
-
 .buttons {
     margin-top: 16px;
     display: grid;
     grid-template-columns: repeat(4, minmax(80px ,1fr));
     gap:10px 40px;
 }
-
 .btn {
     border-radius: 5px;
     height: 70px;
@@ -71,4 +66,24 @@ body {
 .btnAC{
     background-color: rgb(185, 10, 10);
     color: white;
+}
+
+@media (max-width : 550px){
+    .container{
+        height: auto;
+        width: 100%;
+        max-width: 380px;
+        /* padding: 10px; */
+    }
+
+    .displayScreen{
+        width:100%;
+        max-width: 300px;
+        font-size: 2em;
+    }
+
+    .buttons{
+        gap:5px 20px;
+        grid-template-columns: repeat(3 ,1fr);
+    }
 }
